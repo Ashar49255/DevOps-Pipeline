@@ -24,7 +24,7 @@ def deploy():
     env = data.get('env', 'production')
     return jsonify({
         "success": True,
-        "message": f"Deployment to {env} triggered successfully 🚀",
+        "message": f"Update Deployment to {env} triggered successfully 🚀",
         "build_id": f"build-{random.randint(1000,9999)}",
         "timestamp": datetime.datetime.now().isoformat()
     })
