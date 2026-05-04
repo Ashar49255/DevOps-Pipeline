@@ -21,3 +21,6 @@ jobs:
 
     - name: Push Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/devops-app
+
+    - name: Print Message
+      run: echo " 🚀 Pipeline running"
